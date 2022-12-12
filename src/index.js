@@ -20,8 +20,8 @@ const App = () => {
     console.log("value is:", e.target.value);
   };
   const handelOnClick = () => {
-    setWidth(widthRef.current.value * 0.02645833);
-    setHeight(heightRef.current.value * 0.02645833);
+    setWidth(widthRef.current.value);
+    setHeight(heightRef.current.value);
   };
 
   return (
@@ -47,8 +47,8 @@ const App = () => {
           <Rect
             x={20}
             y={100}
-            width={width}
-            height={height}
+            width={width / 0.0264583333}
+            height={height / 0.0264583333}
             fill="red"
             shadowBlur={5}
           />
