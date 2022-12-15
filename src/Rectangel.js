@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "@types/react";
+import { useState } from "react";
 import { Layer, Stage } from "react-konva";
 
 function Rectangel(props) {
