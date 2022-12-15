@@ -9,15 +9,14 @@ function App() {
   const b = 0;
   const [c, setC] = useState(100);
   const [d, setD] = useState(50);
-  const [text, setText] = useState("");
   const handelOnChangeWidth = (e) => {
     setWidth(e.target.value);
-    setC(width - a);
     console.log("width value is:", e.target.value);
+    setC(e.target.value - a);
   };
   const handelOnChangeHeight = (e) => {
     setHeight(e.target.value);
-    setD(height - a);
+    setD(e.target.value - a);
     console.log("height value is:", e.target.value);
   };
   return (
