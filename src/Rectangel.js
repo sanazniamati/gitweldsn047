@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import { Layer, Stage } from "react-konva";
+import { Layer, Rect, Stage } from "react-konva";
 
-function Rectangel(props) {
+function Rectangel() {
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(0);
   const handelOnChangeWidth = (e) => {
@@ -22,7 +22,7 @@ function Rectangel(props) {
       <input type={"number"} onChange={handelOnChangeHeight} />
       <Stage width={window.innerWidth} height={window.innerHeight}>
         <Layer>
-          <Rectangel
+          <Rect
             x={20}
             y={100}
             width={width / 0.0264583333}
